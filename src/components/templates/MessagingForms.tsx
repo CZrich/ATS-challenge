@@ -99,9 +99,7 @@ export const MessagingForms: FC<MessagingFormsProps> = ({
     
         setFormData(newFormData);
     }, [templateType, channels]);
-    // Update default messages when template type changes
-
-    // Crear una lista ordenada de canales habilitados
+    
     const [enabledChannels, setEnabledChannels] = useState<ChannelKey[]>([]);
     // Índice del canal actual en la lista de canales habilitados
     const [currentChannelIndex, setCurrentChannelIndex] = useState(0);

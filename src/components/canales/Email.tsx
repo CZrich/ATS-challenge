@@ -59,7 +59,7 @@ const getDefaultContent = (type: typeMessage): Email => {
             setMessage(defaultContent.message);
             updateFormData(defaultContent);
         }
-    }, [templateType, updateFormData,formData.message,formData.subject]); 
+    }, [templateType])
     
     const handleChange = (field: string, value: string) => {
         const newFormData = { ...formData };

@@ -50,7 +50,7 @@ export const WhatsappForm :FC<WhatsappFormProps>= ({
             setMessage(defaultContent.message);
             updateFormData(defaultContent);
         }
-    }, [templateType, updateFormData, message]); 
+    }, [templateType])
     
     const handleMessageChange = (newMessage: string) => {
         setMessage(newMessage);

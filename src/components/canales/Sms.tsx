@@ -47,11 +47,11 @@ useEffect(() => {
 
     // Only set defaults if current values are empty
     if ( !formData.message) {
-       
+        //if (formData.message === '' && message === '') {
         setMessage(defaultContent.message);
         updateFormData(defaultContent);
     }
-}, [templateType, updateFormData, formData.message]); 
+}, [templateType])
    
     
     // Actualizar el formData cuando cambia el mensaje
